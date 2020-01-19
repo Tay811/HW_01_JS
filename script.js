@@ -16,12 +16,17 @@ function changeStyle(){
 }
 
 
-let flexPage = document.getElementsById("page");
+let flexPage = document.getElementById("page");
 
 function newFlexBlock(){
-    maine.style.display = "none";
-    flexPage.style.display = "flex";
+    // maine.style.display = "none";
+    // flexPage.style.display = "flex";
+    if(maine.style.display == "flex"){
+ 		maine.style.display = "none";
+ 		flexPage.style.display = "flex";
+    }
 }
+
 newFlexBlock()
 
 
